@@ -1,0 +1,10 @@
+steps:
+- id: 'tf init'
+ name: 'hashicorp/terraform'
+ args: ['init']
+- id: 'tf plan'
+ name: 'hashicorp/terraform'
+ args: ['plan']
+- id: 'tf apply'
+ name: 'hashicorp/terraform'
+ args: ['apply','-auto-approve']
